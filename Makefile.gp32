@@ -1,0 +1,41 @@
+PREFIX := $(DEVKITARM)/bin/arm-$(FORMAT)-
+CC = $(PREFIX)gcc
+CXX = $(PREFIX)g++
+LD = $(PREFIX)gcc
+AS = $(PREFIX)as
+AR = $(PREFIX)ar
+OC = $(PREFIX)objcopy
+GP32SDK := E:/gp32dev/gp32_SDK
+
+PRG = RACE
+
+LIBS = $(GP32SDK)/lib/gp_common.a $(GP32SDK)/lib/gp_smc.a $(GP32SDK)/lib/gp_font8.a
+LDFLAGS = -s -Wall -Wl,-Map,$(PRG).map
+
+INCLUDES = -I$(GP32SDK)/src.lowlevel/include -I$(GP32SDK)/include
+
+OPTIM = -O3 -fexpensive-optimizations -fstrict-aliasing \
+-falign-functions -fomit-frame-pointer -ffast-math -finline \
+-finline-functions -finline-limit=200 -fno-builtin -fno-common \
+-fno-exceptions -fweb -frename-registers
+
+CXXFLAGS = $(INCLUDES) $(OPTIM) -DDRZ80 -DTARGET_GP2X -D__GP32__ -s -Wall -mcpu=arm920 -mtune=arm920t -mstructure-size-boundary=32 -mno-thumb-interwork
+
+CFLAGS = $(CXXFLAGS) -ffreestanding
+
+OBJS = gpmain.o enablecache.o gfx.o memcpy.o main.o memory.o ngpBios.o tlcs900h.o flash.o DrZ80_support.o DrZ80.o input.o sound.o neopopsound.o graphics.o init1330.o
+
+all:	$(OBJS)
+	$(OC) -I binary -O elf32-littlearm  -B armv4t splash.raw splash.o
+	$(OC) -I binary -O elf32-littlearm  -B armv4t intro.wav intro.o
+	$(LD) $(LDFLAGS) -specs=$(DEVKITARM)/arm-$(FORMAT)/lib/gp32.specs $(OBJS) splash.o intro.o $(LIBS) -o $(PRG).$(FORMAT)
+	$(OC) -O binary $(PRG).$(FORMAT) $(PRG).bin
+#	gprun $(PRG).bin
+	$(DEVKITARM)/bin/b2fxec -a Thor -t $(PRG) $(PRG).bin $(PRG).fxe
+#	$(GP32SDK)/emu/geepee32 /FXE=$(PRG).fxe /SMC=$(PRG).smc /RUN /nosplash
+
+install:
+	gplink put $(PRG).fxe gpmm
+
+clean:
+	rm -f *.o $(PRG).map $(PRG).bin $(PRG).$(FORMAT)

@@ -1,0 +1,61 @@
+CROSS_COMPILE = arm-wince-pe-
+
+# point SDL_BASE at your SDL libs directory for the Gizmondo
+SDL_BASE = /cygdrive/c/devGiz/GizSDL
+
+INCLUDES = -I$(SDL_BASE)/include -I$(SDL_BASE)/include/SDL -I$(SDL_BASE)/include/SDL_image -I$(SDL_BASE)/include/SDL_mixer -I$(SDL_BASE)/include/zlib
+
+LDFLAGS  = -L$(SDL_BASE) -lSDL -lSDL_mixer -lSDL_image -lzlib -s -static
+
+STRIP = $(CROSS_COMPILE)strip
+
+# this is called core.exe because it will be called
+# from a small menu app which we'll call GizRACE.exe so the
+# user doesn't mistakenly run this directly
+TARGET = core.exe
+
+# build tools
+GPP = $(CROSS_COMPILE)g++
+GCC = $(CROSS_COMPILE)gcc
+
+CFLAGS = -DDRZ80 -msoft-float -DGIZMONDO -O3 -Wall -ffast-math -funroll-loops -mcpu=arm920 -mtune=arm920t -fstrict-aliasing -fexpensive-optimizations -falign-functions -fweb -frename-registers -fomit-frame-pointer -finline -finline-functions -fno-builtin -fno-common -mstructure-size-boundary=8
+
+CFLAGS+= $(INCLUDES)
+
+LIBS = $(LDFLAGS)
+
+OBJS = 	graphics.o \
+	input.o \
+	main.o \
+	memory.o \
+	neopopsound.o \
+	ngpBios.o \
+	sound.o \
+	tlcs900h.o \
+	DrZ80_support.o DrZ80.o \
+	flash.o
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(GPP) -o $(TARGET) $(OBJS) $(LIBS)
+
+clean:
+	$(RM) -f $(TARGET) $(COMPTARGET) $(OBJS)
+
+.cpp.o:
+	$(GPP) $(CFLAGS) -c $< -o $@
+
+.c.o:
+	$(GCC) $(CFLAGS) -c $< -o $@
+
+.C.o:
+	$(GCC) $(CFLAGS) -c $< -o $@
+
+.s.o:
+	$(GPP) $(CFLAGS) -c $< -o $@
+
+.S.o:
+	$(GPP) $(CFLAGS) -c $< -o $@
+
+

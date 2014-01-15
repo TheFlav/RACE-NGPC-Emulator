@@ -1,0 +1,364 @@
+# depslib dependency file v1.0
+1150574094 d:\gp2x\race\memory.cpp
+	"stdafx.h"
+	"main.h"
+	"memory.h"
+	"input.h"
+	"graphics.h"
+	"sound.h"
+	"tlcs900h.h"
+	"DrZ80_support.h"
+
+1148141470 d:\gp2x\race\stdafx.h
+	"StdAfx.h"
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<time.h>
+	<sys/types.h>
+
+1150574094 d:\gp2x\race\main.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<sys/types.h>
+	<ctype.h>
+	<math.h>
+	"GP2X.h"
+	"gizmondo.h"
+	"gp32.h"
+
+1148141470 d:\gp2x\race\gp2x.h
+	<SDL/SDL.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_image.h>
+
+1150574094 d:\gp2x\race\memory.h
+	"stdafx.h"
+	"neopopsound.h"
+	"sound.h"
+	"input.h"
+	"graphics.h"
+	"main.h"
+	"flash.h"
+	"DrZ80_support.h"
+	"z80.h"
+
+1148141470 d:\gp2x\race\neopopsound.h
+	"main.h"
+
+1148141470 d:\gp2x\race\sound.h
+	"stdafx.h"
+	"main.h"
+
+1148141470 d:\gp2x\race\input.h
+
+1148141470 d:\gp2x\race\graphics.h
+
+1148141470 d:\gp2x\race\flash.h
+
+1148141470 d:\gp2x\race\drz80_support.h
+	"DrZ80.h"
+
+1148141470 d:\gp2x\race\drz80.h
+
+1148141470 d:\gp2x\race\z80.h
+
+1148141470 d:\gp2x\race\tlcs900h.h
+
+1148141470 d:\gp2x\race\gp2x.cpp
+	"GP2X.h"
+	"stdafx.h"
+	<math.h>
+	"main.h"
+
+1150574094 d:\gp2x\race\graphics.cpp
+	"main.h"
+	"graphics.h"
+	"memory.h"
+	"gp32.h"
+	"gfx.h"
+	"stdafx.h"
+	"main.h"
+	"graphics.h"
+	"memory.h"
+	"gizmondo.h"
+	"GP2X.h"
+
+1148141470 d:\gp2x\race\gfx.h
+	"gp32.h"
+
+1150574094 d:\gp2x\race\input.cpp
+	"stdafx.h"
+	"main.h"
+	"input.h"
+	"memory.h"
+	"gizmondo.h"
+
+1148141470 d:\gp2x\race\neopopsound.cpp
+	"stdafx.h"
+	"neopopsound.h"
+	"main.h"
+	"memory.h"
+
+1148141470 d:\gp2x\race\ngpbios.cpp
+	"stdafx.h"
+	"main.h"
+	"ngpBios.h"
+
+1148141470 d:\gp2x\race\ngpbios.h
+
+1148141470 d:\gp2x\race\sound.cpp
+	"stdafx.h"
+	"main.h"
+	"sound.h"
+	"memory.h"
+	"DrZ80_support.h"
+	"z80.h"
+	<math.h>
+
+1150574094 d:\gp2x\race\tlcs900h.cpp
+	"stdafx.h"
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+	"tlcs900h.h"
+	"memory.h"
+	"input.h"
+	"graphics.h"
+	"ngpbios.h"
+	"neopopsound.h"
+
+1148141470 d:\gp2x\race\z80.cpp
+	"stdafx.h"
+	"main.h"
+	"memory.h"
+	"z80.h"
+
+1148141470 d:\gp2x\race\flash.cpp
+	"StdAfx.h"
+	"memory.h"
+	"flash.h"
+	<string.h>
+	<unistd.h>
+	"fileio.h"
+
+1150575086 d:\gp2x\race\main.cpp
+	"stdafx.h"
+	"main.h"
+	"memory.h"
+	"tlcs900h.h"
+	"input.h"
+	"graphics.h"
+	"tlcs900h.h"
+	"neopopsound.h"
+	"DrZ80_support.h"
+	"z80.h"
+	"fileio.h"
+	"gfx.h"
+	"gizmondo.h"
+
+1149607149 d:\gp2x\race\gizmondo.h
+	"sdl.h"
+	"sdl_mixer.h"
+	"sdl_image.h"
+
+1243244605 source:/home/hooka/projects/RACE/flash.cpp
+	"StdAfx.h"
+	"memory.h"
+	"flash.h"
+	<string.h>
+	<unistd.h>
+	"fileio.h"
+
+1243244605 /home/hooka/projects/RACE/StdAfx.h
+	"StdAfx.h"
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<time.h>
+	<sys/types.h>
+
+1243244605 /home/hooka/projects/RACE/memory.h
+	"StdAfx.h"
+	"neopopsound.h"
+	"sound.h"
+	"input.h"
+	"graphics.h"
+	"main.h"
+	"flash.h"
+	"DrZ80_support.h"
+	"z80.h"
+
+1243244605 /home/hooka/projects/RACE/neopopsound.h
+	"main.h"
+
+1243244605 /home/hooka/projects/RACE/main.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<sys/types.h>
+	<ctype.h>
+	<math.h>
+	"GP2X.h"
+	"gizmondo.h"
+	"gp32.h"
+
+1243728474 /home/hooka/projects/RACE/GP2X.h
+	<SDL/SDL.h>
+	<SDL/SDL_mixer.h>
+	<SDL/SDL_image.h>
+
+1243244605 /home/hooka/projects/RACE/gizmondo.h
+	"sdl.h"
+	"sdl_mixer.h"
+	"sdl_image.h"
+
+1243244605 /home/hooka/projects/RACE/sound.h
+	"StdAfx.h"
+	"main.h"
+
+1243244605 /home/hooka/projects/RACE/input.h
+
+1243244605 /home/hooka/projects/RACE/graphics.h
+
+1243244605 /home/hooka/projects/RACE/flash.h
+
+1243244605 /home/hooka/projects/RACE/DrZ80_support.h
+	"DrZ80.h"
+
+1243244605 /home/hooka/projects/RACE/DrZ80.h
+
+1243244605 /home/hooka/projects/RACE/z80.h
+
+1243244605 source:/home/hooka/projects/RACE/gp2x.cpp
+	"GP2X.h"
+	"StdAfx.h"
+	<math.h>
+	"main.h"
+
+1243244605 source:/home/hooka/projects/RACE/graphics.cpp
+	"main.h"
+	"graphics.h"
+	"memory.h"
+	"gp32.h"
+	"gfx.h"
+	"StdAfx.h"
+	"main.h"
+	"graphics.h"
+	"memory.h"
+	"gizmondo.h"
+	"GP2X.h"
+	"flush_uppermem_cache.h"
+
+1243244605 /home/hooka/projects/RACE/gfx.h
+	"gp32.h"
+
+1243244605 /home/hooka/projects/RACE/flush_uppermem_cache.h
+
+1243244605 source:/home/hooka/projects/RACE/input.cpp
+	"StdAfx.h"
+	"main.h"
+	"input.h"
+	"memory.h"
+	"SDL_gp2x.h"
+	"state.h"
+	"gizmondo.h"
+
+1243244605 /home/hooka/projects/RACE/state.h
+	"stdafx.h"
+	"DrZ80.h"
+	"neopopsound.h"
+	"DrZ80_support.h"
+
+1243243956 /home/hooka/projects/RACE/stdafx.h
+	"StdAfx.h"
+	<stdlib.h>
+	<stdbool.h>
+	<stdio.h>
+	<time.h>
+	<sys/types.h>
+
+1243728941 source:/home/hooka/projects/RACE/main.cpp
+	"StdAfx.h"
+	<SDL/SDL.h>
+	<SDL/SDL_ttf.h>
+	"main.h"
+	"menu.h"
+	"memory.h"
+	"tlcs900h.h"
+	"input.h"
+	"graphics.h"
+	"tlcs900h.h"
+	"neopopsound.h"
+	"DrZ80_support.h"
+	"z80.h"
+	<unistd.h>
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<fcntl.h>
+	<sys/mman.h>
+	"fileio.h"
+	"gfx.h"
+	"gizmondo.h"
+
+1243244605 /home/hooka/projects/RACE/menu.h
+
+1243244605 /home/hooka/projects/RACE/tlcs900h.h
+
+1243244605 source:/home/hooka/projects/RACE/memory.cpp
+	"StdAfx.h"
+	"main.h"
+	"memory.h"
+	"input.h"
+	"graphics.h"
+	"sound.h"
+	"tlcs900h.h"
+	"koyote_bin.h"
+	"DrZ80_support.h"
+
+1243244605 /home/hooka/projects/RACE/koyote_bin.h
+
+1243244605 source:/home/hooka/projects/RACE/neopopsound.cpp
+	"stdafx.h"
+	"neopopsound.h"
+	"main.h"
+	"memory.h"
+
+1243244605 source:/home/hooka/projects/RACE/ngpBios.cpp
+	"StdAfx.h"
+	"main.h"
+	"ngpBios.h"
+
+1243244605 /home/hooka/projects/RACE/ngpBios.h
+
+1243244605 source:/home/hooka/projects/RACE/sound.cpp
+	"StdAfx.h"
+	"main.h"
+	"sound.h"
+	"memory.h"
+	"DrZ80_support.h"
+	"z80.h"
+	<math.h>
+
+1243244605 source:/home/hooka/projects/RACE/tlcs900h.cpp
+	"StdAfx.h"
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+	"tlcs900h.h"
+	"memory.h"
+	"input.h"
+	"graphics.h"
+	"ngpBios.h"
+	"neopopsound.h"
+
+1243244605 source:/home/hooka/projects/RACE/z80.cpp
+	"StdAfx.h"
+	"main.h"
+	"memory.h"
+	"z80.h"
+

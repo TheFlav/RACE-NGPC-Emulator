@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_project_file>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="1"/>
+	<Project>
+		<Option title="RACE!"/>
+		<Option makefile="Makefile"/>
+		<Option makefile_is_custom="0"/>
+		<Option active_target="0"/>
+		<Option compiler="0"/>
+		<Build>
+			<Target title="default">
+				<Option output="race.exe"/>
+				<Option working_dir="."/>
+				<Option object_output=".objs"/>
+				<Option deps_output=".deps"/>
+				<Option type="1"/>
+				<Option compiler="0"/>
+				<Option projectResourceIncludeDirsRelation="1"/>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-g"/>
+		</Compiler>
+		<Linker>
+			<Add library="mingw32"/>
+			<Add library="SDLmain"/>
+			<Add library="SDL"/>
+			<Add library="C:\Program Files\CodeBlocks\lib\SDL_mixer.lib"/>
+			<Add library="C:\Program Files\CodeBlocks\lib\SDL_image.lib"/>
+		</Linker>
+		<Unit filename="flash.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="gp2x.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="graphics.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="input.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="main.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="memory.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="neopopsound.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="ngpBios.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="sound.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="tlcs900h.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+		<Unit filename="z80.cpp">
+			<Option compilerVar="CPP"/>
+			<Option target="default"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
